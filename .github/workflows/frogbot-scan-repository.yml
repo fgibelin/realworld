@@ -18,14 +18,13 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v4
-      - 
-        name: Set up JDK 17
-        uses: actions/setup-java@v4
+      -
+        uses: actions/setup-node@v3
+        id: setup-node
         with:
-          java-version: '17'
-          distribution: 'adopt'
-          cache: maven
-      - uses: jfrog/frogbot@v2
+          node-version: '18'
+      -
+        uses: jfrog/frogbot@v2
         env:
           JF_CLI_LOG_LEVEL: "DEBUG"
           JF_URL: ${{ secrets.JF_URL }}
