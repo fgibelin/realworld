@@ -40,3 +40,9 @@ yarn-error.log*
 
 # IDEs
 .idea
+
+# Python
+__pycache__
+
+# Local db
+dev.db
