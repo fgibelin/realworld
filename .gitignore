@@ -23,6 +23,7 @@ coverage
 
 # Build Outputs
 .next/
+.nitro/
 out/
 build
 dist
@@ -43,6 +44,9 @@ yarn-error.log*
 
 # Python
 __pycache__
+
+# Temp files
+.tmp
 
 # Local db
 dev.db
